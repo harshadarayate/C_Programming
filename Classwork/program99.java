@@ -1,0 +1,53 @@
+import java.util.*;
+
+class program100
+{
+    public static void main(String A[]) 
+    {
+
+        Scanner sobj = new Scanner(System.in);
+
+        int iSize = 0;
+    
+        System.out.println("Enter the Size of Array : ");
+        iSize = sobj.nextInt();
+
+
+        int Arr[] = new int[iSize];
+
+        System.out.println("Enter Elements : ");
+
+        Arr[0] = sobj.nextInt();
+        Arr[1] = sobj.nextInt();
+        Arr[2] = sobj.nextInt();
+        Arr[3] = sobj.nextInt();
+        Arr[4] = sobj.nextInt();
+
+        ArrayX aobj = new  ArrayX();
+        aobj.Display(Arr);
+
+        //Importatnt
+
+        aobj = null;
+        Arr = null;
+        sobj = null;
+
+        System.gc();
+        
+    }
+}
+
+class ArrayX
+{
+    public void Display(int Brr[])
+    {
+        int i = 0;
+
+        for(i = 0; i < Brr.length; i++)
+        {
+            System.err.println(Brr[i]);
+        }
+    }
+
+    
+}
