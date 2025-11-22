@@ -1,0 +1,53 @@
+/*
+    i/p =   row = 4
+            col = 4
+
+    o/p =   *   *   *   *
+            $   $   $   $
+            *   *   *   *
+            $   $   $   $
+*/
+import java.util.Scanner;
+
+class program168 
+{
+    public static void main(String a[]) 
+    {
+        int iValue1 = 0, iValue2 = 0;
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter the Number of Rows : \n");
+        iValue1 = sobj.nextInt();
+
+        System.out.println("Enter the Number of Columns : \n");
+        iValue2 = sobj.nextInt();
+
+        pattern pobj = new pattern();
+        pobj.Display(iValue1, iValue2);
+    }
+}
+
+class pattern 
+{
+    public void Display(int iRow, int iCol) 
+    {
+        int i = 0, j = 0;
+
+        for(i = 1; i <= iRow; i++)
+        {
+            for(j = 1; j <= iCol; j++)
+            {
+
+                if((i % 2) == 0)
+                {
+                    System.out.print("$\t");
+                }
+                else
+                {
+                    System.out.print("*\t");
+                }
+            }
+            System.out.println();
+        }
+    }
+}

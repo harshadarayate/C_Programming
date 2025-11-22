@@ -1,9 +1,12 @@
-
+/*
+    i/p =   5
+    o/p =   A   B   C   D   E
+    Ascii   65  66  67  68  69
+*/
 import java.util.Scanner;
-// i/p = 5
-// o/p = * * * * *
 
-class program152 {
+class program176
+{
     public static void main(String a[]) 
     {
         int iValue = 0;
@@ -21,12 +24,15 @@ class pattern
 {
     public void Display(int iNo) 
     {
-        int iCnt = 0;
-        for(iCnt = 1; iCnt <= iNo; iCnt++)
+        int  iCnt = 0;                            
+        //int i = 97;
+        char ch = 'A';
+
+        for(iCnt = 1; iCnt <= iNo; iCnt++, ch++)
         {
-            System.out.print("*\t");
-        } 
-        System.out.println();
+            System.err.printf("%c\t",ch);
+        }
+        
+        System.err.println();
     }
 }
-

@@ -1,9 +1,14 @@
+/*
+    i/p =   5
+    o/p =   a   b    c   d   e
+    Ascii   97               101
 
+    we should not use ascii value in code becoz it lesser the readability if the code 
+*/
 import java.util.Scanner;
-// i/p = 5
-// o/p = * * * * *
 
-class program152 {
+class program171
+{
     public static void main(String a[]) 
     {
         int iValue = 0;
@@ -21,12 +26,13 @@ class pattern
 {
     public void Display(int iNo) 
     {
-        int iCnt = 0;
+        int  iCnt = 0;
+        int i = 96;
+
         for(iCnt = 1; iCnt <= iNo; iCnt++)
         {
-            System.out.print("*\t");
-        } 
-        System.out.println();
+            System.err.printf("%d\t",i+iCnt);
+        }
+        System.err.println();
     }
 }
-

@@ -1,9 +1,7 @@
-
 import java.util.Scanner;
-// i/p = 5
-// o/p = * * * * *
 
-class program152 {
+class program160 
+{
     public static void main(String a[]) 
     {
         int iValue = 0;
@@ -22,10 +20,15 @@ class pattern
     public void Display(int iNo) 
     {
         int iCnt = 0;
+
+        for(iCnt = -iNo; iCnt <= 0; iCnt++)
+        {
+            System.out.print(iCnt+"\t");
+        }
         for(iCnt = 1; iCnt <= iNo; iCnt++)
         {
-            System.out.print("*\t");
-        } 
+            System.out.print(iCnt+"\t");
+        }
         System.out.println();
     }
 }

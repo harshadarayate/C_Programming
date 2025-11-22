@@ -1,9 +1,7 @@
-
 import java.util.Scanner;
-// i/p = 5
-// o/p = * * * * *
 
-class program152 {
+class program161 
+{
     public static void main(String a[]) 
     {
         int iValue = 0;
@@ -22,11 +20,17 @@ class pattern
     public void Display(int iNo) 
     {
         int iCnt = 0;
-        for(iCnt = 1; iCnt <= iNo; iCnt++)
+
+        for(iCnt = -iNo; iCnt <= iNo; iCnt++)
         {
-            System.out.print("*\t");
+            System.out.print(iCnt+"\t");   
         } 
+
         System.out.println();
     }
 }
 
+//can two loops merge?
+// if ending of first loop and starting of second loop is same
+// displacement of both loop is same eiter positive or negative
+// if displacement is like +2 and +1 cannot merge

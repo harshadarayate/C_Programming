@@ -1,7 +1,11 @@
 
+/*
+    i/p =   8
+    o/p =   
+*/
 import java.util.Scanner;
 
-class program154 {
+class program178 {
     public static void main(String a[]) {
         int iValue = 0;
         Scanner sobj = new Scanner(System.in);
@@ -17,20 +21,15 @@ class program154 {
 class pattern {
     public void Display(int iNo) {
         int iCnt = 0;
+        // int i = 97;
+        char ch = 'z';
 
-        for (iCnt = 1; iCnt <= iNo; iCnt++) {
-            // if(iCnt%2 != 0)
-            // {
-            // System.out.print(iCnt+"\t*\t");
-            // }
+        for (iCnt = 1; iCnt <= iNo; iCnt++, ch--) {
 
-            if ((iCnt % 2) == 0) {
-                System.out.print("\t*\t");
-            } else {
-                System.out.print(iCnt);
-            }
+            System.err.printf("%c\t", ch);
 
         }
-        System.out.println();
+
+        System.err.println();
     }
 }

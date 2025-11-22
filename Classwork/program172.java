@@ -1,9 +1,13 @@
-
+/*
+    i/p =   5
+    o/p =   a   b    c   d   e
+    Ascii   97               101
+    printf works in c, cpp, java
+*/
 import java.util.Scanner;
-// i/p = 5
-// o/p = * * * * *
 
-class program152 {
+class program172
+{
     public static void main(String a[]) 
     {
         int iValue = 0;
@@ -21,12 +25,14 @@ class pattern
 {
     public void Display(int iNo) 
     {
-        int iCnt = 0;
+        int  iCnt = 0;
+        int i = 97;
+
         for(iCnt = 1; iCnt <= iNo; iCnt++)
         {
-            System.out.print("*\t");
-        } 
-        System.out.println();
+            System.err.printf("%d\t",i);
+            i++;
+        }
+        System.err.println();
     }
 }
-

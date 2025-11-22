@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class program157 
+class program158 
 {
     public static void main(String a[]) 
     {
@@ -21,7 +21,7 @@ class pattern
     {
         int iCnt = 0;
 
-        for(iCnt = -iNo; iCnt <= -1; iCnt++)
+        for(iCnt = -iNo; iCnt <= 0; iCnt++)
         {
             System.out.print((iCnt)+"\t");   
         } 
