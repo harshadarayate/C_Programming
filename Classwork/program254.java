@@ -5,9 +5,8 @@ import java.util.*;
 class program249 {
     public static void main(String[] args) {
 
-      
-        Scanner scanobj = new Scanner(System.in); 
-        
+        Scanner scanobj = new Scanner(System.in);
+
         System.out.println("Enter Your name : ");
 
         String sobj = scanobj.nextLine();
@@ -16,7 +15,7 @@ class program249 {
 
         sobj = strobj.Update(sobj);
 
-        System.out.println("Updated String : " +sobj);          //in case if you dont want your previous string 
+        System.out.println("Updated String : " + sobj); // in case if you dont want your previous string
 
     }
 }
@@ -24,12 +23,11 @@ class program249 {
 class StringX {
     public String Update(String str) {
 
-        
         char Arr[] = str.toCharArray();
 
         Arr[0] = '_';
 
-        return new String(Arr);                 //changed[not preferable]
-    
+        return new String(Arr); // changed[not preferable]
+
     }
 }

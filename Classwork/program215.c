@@ -7,8 +7,6 @@ void Display(char *str)
         printf("%c\n", *str);
         str++;
     }
-
-    
 }
 
 int main()

@@ -3,7 +3,6 @@
 void strrevX(char *str)
 {
     char *temp = '\0';
-
     char *start = str, *end = str;
 
     while (*end != '\0')
@@ -15,24 +14,22 @@ void strrevX(char *str)
     {
         *temp = *start;
         *start = *end;
-        *end  = *temp;
+        *end = *temp;
 
         start++;
         end--;
     }
-    
 }
 
 int main()
 {
     char Arr[50] = {'\0'};
-    char Brr[50] = {'\0'};
 
     printf("Enter String : \n");
     scanf("%[^'\n']s", Arr);
 
     strrevX(Arr);
 
-    printf("Updated string is %s \n",Arr);
+    printf("Updated string is %s \n", Arr);
     return 0;
 }
